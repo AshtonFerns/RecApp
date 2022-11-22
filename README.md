@@ -1,4 +1,4 @@
-<h2>This project is archived, it's no longer under development. If you would like to continue development, please feel free to fork the project according to the GPL license.</h2>
+<h3>This is a fork of <a href="https://github.com/amikha1lov/RecApp">RecApp</a>, which has been archived.</h3>
 
 
 
@@ -28,7 +28,7 @@
 
 
 ## Description
-A user-friendly and open-source screencast application for Linux written in GTK using free GStreamer modules instead of FFmpeg.
+A user-friendly and open-source screencast application for Linux written in GTK using free GStreamer modules instead of FFmpeg. 
 
 
 ## Packaging status
@@ -41,7 +41,7 @@ A user-friendly and open-source screencast application for Linux written in GTK 
 ## Build from source
 
 ```
-git clone https://github.com/amikha1lov/RecApp.git
+git clone https://github.com/AshtonFerns/RecApp.git
 cd RecApp
 git submodule update --init --recursive
 mkdir -p $HOME/Projects/flatpak/repo
