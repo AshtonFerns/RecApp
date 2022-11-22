@@ -277,7 +277,7 @@ class Recording:
     def get_sound_string(self):
         import pulsectl
         with pulsectl.Pulse() as pulse:
-            sound_source = pulse.sink_list()[0].name
+            sound_source = pulse.server_info().default_sink_name
             if self.output_format == "webm" or self.output_format == "mkv":
                 sound_output_string = f"pulsesrc provide-clock=false device='{sound_source}.monitor' buffer-time=20000000 ! " \
                                       f"'audio/x-raw,depth=24,channels=2,rate=44100,format=F32LE,payload=96' ! queue ! " \
